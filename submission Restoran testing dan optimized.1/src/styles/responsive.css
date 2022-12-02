@@ -1,0 +1,212 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+@media screen and (min-width: 400px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        font-size: 30px;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    button {
+        box-sizing: border-box;
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+}
+
+@media screen and (min-width: 455px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .headline__content {
+        padding: 16px 16px;
+    }
+
+    .headline__title {
+        font-size: 28px;
+    }
+
+    .headline__description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .app-bar__menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .headline__content {
+        margin: 0 auto;
+        max-width: 650px;
+    }
+
+    .post-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .post-item__title {
+        font-size: 18px;
+    }
+
+    .post-item__description {
+        font-size: 14px;
+    }
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+    .app-bar .resto_inner h1  {
+        font-size: 1.5em;
+    }
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+    .app-bar .nav {
+        position: static;
+        width: 100%;
+    }
+    .app-bar .nav ul li  {
+        display: inline-block;
+    }
+    .app-bar .nav ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .post-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 800px) {  
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .nav__list {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero{
+        width:100%;
+    }
+    .hero_head {
+        width: 100%;
+    }
+    .hero_sub {
+        width: 100%;
+    }
+    .headline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .headline__content {
+        padding: 16px 32px;
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .post-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}
